@@ -1,59 +1,49 @@
-# Gamereview
+GameReview
+Este projeto foi gerado com o Angular CLI versão 19.2.13.
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.13.
+Neste projeto, iremos montar o layout para a aplicação GameReview. Inicialmente, utilizaremos dados mockados (mocks) para o desenvolvimento do frontend. Posteriormente, o frontend será integrado com o backend desenvolvido em Java, disponível em: https://github.com/RyanGTorres/GameReview.
 
-## Development server
+Servidor de Desenvolvimento
+Para iniciar um servidor de desenvolvimento local, execute:
 
-To start a local development server, run:
+Bash
 
-```bash
 ng serve
-```
+Assim que o servidor estiver em execução, abra seu navegador e navegue para http://localhost:4200/. A aplicação será recarregada automaticamente sempre que você modificar qualquer um dos arquivos de origem.
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Geração de Código (Scaffolding)
+O Angular CLI inclui ferramentas poderosas de scaffolding (geração de código). Para gerar um novo componente, execute:
 
-## Code scaffolding
+Bash
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+ng generate component nome-do-componente
+Para uma lista completa dos schematics disponíveis (como components, directives ou pipes), execute:
 
-```bash
-ng generate component component-name
-```
+Bash
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
 ng generate --help
-```
+Build (Compilação)
+Para compilar (buildar) o projeto, execute:
 
-## Building
+Bash
 
-To build the project run:
-
-```bash
 ng build
-```
+Isso irá compilar seu projeto e armazenar os artefatos de build no diretório dist/. Por padrão, o build de produção otimiza sua aplicação para performance e velocidade.
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+Executando Testes Unitários
+Para executar testes unitários com o test runner Karma, use o seguinte comando:
 
-## Running unit tests
+Bash
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
 ng test
-```
+Executando Testes End-to-End
+Para testes end-to-end (e2e), execute:
 
-## Running end-to-end tests
+Bash
 
-For end-to-end (e2e) testing, run:
-
-```bash
 ng e2e
-```
+O Angular CLI não vem com um framework de testes end-to-end por padrão. Você pode escolher um que atenda às suas necessidades.
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+Recursos Adicionais
+Para mais informações sobre o uso do Angular CLI, incluindo referências detalhadas de comandos, visite a página Visão Geral e Referência de Comandos do Angular CLI.
 
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.

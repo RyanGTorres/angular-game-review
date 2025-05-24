@@ -1,6 +1,6 @@
 {
-  "name": "gamereview",
-  "version": "0.0.0",
+  "name": "game-review",
+  "version": "0.0.1",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
