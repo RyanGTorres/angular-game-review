@@ -9,8 +9,14 @@
 .signup-form-container {
     width: 100%;
     max-width: 600px;
-    padding: 2.5rem 5.4rem;
+    margin: 0 auto;
+    padding: 2.5rem 3.5rem;
+}
 
+.signup-content-wrapper {
+    max-width: 350px;
+    margin: 0 auto;
+    width: 100%;
 }
 
 #signup-form-form {
