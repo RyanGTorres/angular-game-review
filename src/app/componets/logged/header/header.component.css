@@ -1,0 +1,105 @@
+/* Estilos base do header */
+#header {
+    height: 68px;
+    width: 100%;
+    background-color: #000000;
+    padding: 0 4rem;
+}
+
+/* Estilos do logo */
+#logo {
+    display: flex;
+    align-items: center;
+}
+
+#logo img {
+    max-width: 180px;
+    height: auto;
+    margin-right: 40px;
+}
+
+/* Estilos do menu de navegação */
+#nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-left: 10px;
+}
+
+#nav-menu .nav-link {
+    color: #e5e5e5;
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: none;
+    transition: color 0.2s ease;
+    padding: 0;
+}
+
+#nav-menu .nav-link:hover {
+    color: #b3b3b3;
+    transform: none;
+}
+
+/* Estilos da área direita do header */
+#header-right {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-left: auto;
+}
+
+/* Estilos da barra de pesquisa */
+#search-bar {
+    background-color: #000000;
+    border: 1px solid #13a606;
+    border-radius: 3px;
+    padding: 5px 10px;
+    width: 260px;
+    display: flex;
+    align-items: center;
+}
+
+#search-bar .search-icon {
+    color: #13a606;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+#search-bar input {
+    background: transparent;
+    border: none;
+    color: #13a606;
+    width: 100%;
+    font-size: 14px;
+}
+
+#search-bar input:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+#search-bar input::placeholder {
+    color: #ffffff;
+}
+
+/* Estilos do avatar */
+#avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 3px;
+    border: none;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+/* Ajuste para o layout geral */
+.d-flex {
+    display: flex;
+    align-items: center;
+}
+
+.bg-dark {
+    background-color: #060606 !important;
+}
+
+

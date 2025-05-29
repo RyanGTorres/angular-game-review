@@ -13,7 +13,7 @@ export const routes: Routes = [
     component: SignUpComponent
   },
   {
-    path: '',
+    path: 'home',
     component: HomeComponent
   }
 ];

@@ -1,1 +1,40 @@
-<p>card works!</p>
+<div class="card bg-dark text-white m-3" [style.background-image]="'url(' + backgroundImage + ')'"><div class="col-12 col-md-6 col-lg-4">
+  <app-card
+      title="The Legend of Zelda: Breath of the Wild"
+      description="Action-Adventure"
+      platform="Nintendo Switch"
+      rating="10"
+      gender="Action-Adventure"
+      backgroundImage="/images/fundosgames/zelda.png">
+  </app-card>
+</div>
+<div class="col-12 col-md-6 col-lg-4">
+  <app-card
+      title="The Legend of Zelda: Breath of the Wild"
+      description="Action-Adventure"
+      platform="Nintendo Switch"
+      rating="10"
+      gender="Action-Adventure"
+      backgroundImage="/images/fundosgames/zelda.png">
+  </app-card>
+</div>
+  <div class="card-content">
+    <h2 class="title">{{title}}</h2>
+    <p class="description mb-3">{{description}}</p>
+
+    <div class="info-container">
+      <div class="info-item">
+        <i class="bi bi-controller"></i>
+        <span>{{platform}}</span>
+      </div>
+      <div class="info-item">
+        <i class="bi bi-person"></i>
+        <span>{{rating}}+</span>
+      </div>
+      <div class="info-item">
+        <i class="bi bi-tag"></i>
+        <span>{{gender}}</span>
+      </div>
+    </div>
+  </div>
+</div>

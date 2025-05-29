@@ -1,0 +1,108 @@
+.card {
+  width: 280px;
+  height: 380px;
+  transition: transform 0.3s ease;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  border-radius: 10px;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: -2px;
+  right: -2px;
+  height: 70%;
+  background: linear-gradient(to top, rgba(0,0,0,0.9), rgba(0,0,0,0));
+  pointer-events: none;
+  border-radius: 10px;
+}
+
+.card-body {
+  position: relative;
+  z-index: 1;
+}
+
+.description {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  opacity: 0.9;
+}
+
+.top-tag {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background-color: #14a607;
+  padding: 4px 8px;
+  border-radius: 4px;
+  z-index: 2;
+}
+
+.top-tag span {
+  color: white;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.card-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  color: white;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0 0 8px 0;
+  line-height: 1.2;
+}
+
+.info-container {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.info-item img {
+  width: 16px;
+  height: 16px;
+  opacity: 0.9;
+}
+
+.info-item span {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.platform {
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+}
+
+.card-title {
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+small {
+  text-shadow: 1px 3px 3px rgba(0,0,0,0.5);
+}
