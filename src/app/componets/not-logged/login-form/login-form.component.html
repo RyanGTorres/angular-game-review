@@ -11,15 +11,15 @@
                 <input type="password" class="form-control" placeholder="Sua senha">
             </div>
             
-            <a href="/home" class="btn btn-custom-green w-100 mb-3">Entrar na conta</a>
+            <a [routerLink]="['']" class="btn btn-custom-green w-100 mb-3">Entrar na conta</a>
             
             <div class="text-center mb-3">
-                <a href="/cadastre-se" class="text-white text-decoration-none">Esqueci minha senha</a>
+                <a [routerLink]="['/cadastre-se']" class="text-white text-decoration-none">Esqueci minha senha</a>
             </div>
             
             <div class="text-center">
                 <span class="text-white">Novo por aqui? </span>
-                <a href="/cadastre-se" class="text-custom-green text-decoration-none">Cadastre-se</a>
+                <a [routerLink]="['/cadastre-se']" class="text-custom-green text-decoration-none">Cadastre-se</a>
             </div>
         </form>
     </div>

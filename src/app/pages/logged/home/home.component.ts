@@ -1,25 +1,16 @@
-import { Component, OnInit } from '@angular/core';
+import { Component} from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HeaderComponent } from '../../../componets/logged/header/header.component';
 import { CardComponent } from '../../../componets/logged/card/card.component';
-import { GameService } from '../../../services/game.service';
-import { Game } from '../../../models/game.interface';
-
+import { RouterLink } from '@angular/router';
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CommonModule, HeaderComponent, CardComponent],
+  imports: [CommonModule, HeaderComponent, CardComponent, RouterLink],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
-export class HomeComponent implements OnInit {
-  games: Game[] = [];
+export class HomeComponent {
 
-  constructor(private gameService: GameService) {}
-
-  ngOnInit() {
-    this.gameService.getGames().subscribe(games => {
-      this.games = games;
-    });
-  }
 }
+

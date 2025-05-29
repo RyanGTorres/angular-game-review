@@ -1,3 +1,9 @@
 body {
     color: #fff;
-}/* You can add global styles to this file, and also import other style files */
+}
+
+.active {
+    color: #00ff00;
+}
+
+

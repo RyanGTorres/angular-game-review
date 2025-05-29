@@ -14,12 +14,13 @@
             <div class="mb-3">
                 <input type="password" class="form-control" placeholder="Sua senha">
             </div>
-            
-            <button type="submit" class="btn btn-custom-green w-100 mb-3">Cadastre-se</button>
+            <a [routerLink]="['/login']">
+                <button type="submit" class="btn btn-custom-green w-100 mb-3">Cadastre-se</button>
+            </a>
             
             <div class="text-center">
                 <span class="text-white">Já tem uma conta? </span>
-                <a href="/login" class="text-custom-green text-decoration-none">Faça Login</a>
+                <a [routerLink]="['/login']" class="text-custom-green text-decoration-none">Faça Login</a>
             </div>
         </form>
     </div>

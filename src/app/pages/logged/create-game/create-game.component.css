@@ -1,0 +1,113 @@
+.create-game-bg {
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #000;
+}
+
+.game-create-card {
+    background-color: #060606;
+    color: white;
+    border-radius: 18px;
+    box-shadow: 0 4px 32px rgba(0,0,0,0.3);
+    padding: 0 3rem;
+    max-width: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.game-logo {
+    width: 200px;
+    height: auto;
+    margin-bottom: 1.2rem;
+    display: block;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+#game-create-form {
+    width: 100%;
+}
+
+.form-control {
+    background-color: #333;
+    border: none;
+    color: white;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+}
+
+.form-control::placeholder {
+    color: #8c8c8c;
+}
+
+.form-control:focus {
+    background-color: #454545;
+    color: white;
+    box-shadow: none;
+    border-color: transparent;
+}
+
+.btn-custom-green {
+    background-color: #14A807;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: background 0.2s;
+}
+
+.btn-custom-green:hover {
+    background-color: #128606;
+    color: white;
+}
+
+.text-custom-green {
+    color: #14A807;
+}
+
+.text-custom-green:hover {
+    color: #128606;
+}
+
+.text-center {
+    margin-top: 2rem;
+    font-size: 1.1rem;
+}
+.floating-button {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #14A807;
+    color: white;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.floating-button i {
+    font-size: 24px;
+}
+
+.floating-button:hover {
+    transform: scale(1.1);
+    background-color: #128606;
+}
