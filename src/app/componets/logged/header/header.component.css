@@ -4,6 +4,7 @@
     width: 100%;
     background-color: #000000;
     padding: 0 4rem;
+
 }
 
 /* Estilos do logo */
@@ -51,7 +52,7 @@
 /* Estilos da barra de pesquisa */
 #search-bar {
     background-color: #000000;
-    border: 1px solid #13a606;
+    border: 1px solid #14A607;
     border-radius: 3px;
     padding: 5px 10px;
     width: 260px;
@@ -60,7 +61,7 @@
 }
 
 #search-bar .search-icon {
-    color: #13a606;
+    color: #14A607;
     font-size: 16px;
     margin-right: 10px;
 }
@@ -68,7 +69,7 @@
 #search-bar input {
     background: transparent;
     border: none;
-    color: #13a606;
+    color: #14A607;
     width: 100%;
     font-size: 14px;
 }
@@ -100,6 +101,73 @@
 
 .bg-dark {
     background-color: #060606 !important;
+}
+
+/* Estilos personalizados do navbar */
+.navbar {
+    background-color: #000000 !important;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+}
+
+.container-fluid {
+    padding-left: 4rem !important;
+    padding-right: 4rem !important;
+}
+
+/* Estilos da barra de pesquisa */
+.search-bar .input-group {
+    width: 260px;
+}
+
+.search-bar .input-group-text {
+    border-right: none;
+}
+
+.search-bar .form-control {
+    border-left: none;
+    color: #14A607;
+}
+
+.search-bar .form-control:focus {
+    box-shadow: none;
+}
+
+.search-bar .form-control::placeholder {
+    color: #ffffff;
+}
+
+/* Estilos do avatar */
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 3px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+/* Media queries para responsividade */
+@media (max-width: 991.98px) {
+    .search-bar .input-group {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .navbar-collapse {
+        padding: 1rem 0;
+    }
+
+    .container-fluid {
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar-brand img {
+        max-width: 140px;
+    }
 }
 
 

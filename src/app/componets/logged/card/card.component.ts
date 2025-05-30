@@ -9,11 +9,11 @@ import { CommonModule } from '@angular/common';
   styleUrls: ['./card.component.css']
 })
 export class CardComponent {
+  @Input() id: number = 0;
   @Input() title: string = '';
-  @Input() description: string = '';
   @Input() platform: string = '';
-  @Input() rating: string = '';
   @Input() gender: string = '';
-  @Input() isTop10: boolean = false;  
+  @Input() ageClassification: string = '';
   @Input() backgroundImage: string = '';
+  @Input() realeseDate: string = '';
 }

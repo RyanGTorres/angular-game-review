@@ -1,20 +1,45 @@
-<div id="header" class="d-flex align-items-center px-4 py-2 bg-dark">
-    <div id="logo">
-        <img src="/images/logopp.png" alt="logo">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark py-2">
+    <div class="container-fluid px-4">
+        <!-- Logo -->
+        <a class="navbar-brand" href="#">
+            <img src="/images/logopp.png" alt="logo" class="img-fluid" style="max-width: 180px;">
+        </a>
+
+        <!-- Botão hamburguer para mobile -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Conteúdo colapsável -->
+        <div class="collapse navbar-collapse" id="navbarContent">
+            <!-- Links de navegação -->
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" [routerLink]="'/'" routerLinkActive="active">Jogos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Desenvolvedoras</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Reviews</a>
+                </li>
+            </ul>
+
+            <!-- Barra de pesquisa e avatar -->
+            <div class="d-flex align-items-center">
+                <form class="search-bar me-3">
+                    <div class="input-group">
+                        <span class="input-group-text bg-transparent custom-border">
+                            <i class="bi bi-search custom-text"></i>
+                        </span>
+                        <input type="text" class="form-control bg-transparent custom-border" placeholder="Search">
+                    </div>
+                </form>
+                <img class="avatar" src="/images/avatar.jpg" alt="Avatar">
+            </div>
+        </div>
     </div>
-    <nav id="nav-menu">
-        <a class="nav-link" href="#">Início</a>
-        <a class="nav-link" [routerLink]="'/'" routerLinkActive="active">Jogos</a>
-        <a class="nav-link" href="#">Desenvolvedoras</a>
-        <a class="nav-link" href="#">Reviews</a>
-    </nav>
-    <div id="header-right">
-        <form id="search-bar">
-            <span class="search-icon">
-                <i class="bi bi-search"></i>
-            </span>
-            <input type="text" placeholder="Search">
-        </form>
-        <img id="avatar" src="/images/avatar.jpg" alt="Avatar">
-    </div>
-</div>
+</nav>
