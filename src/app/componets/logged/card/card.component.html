@@ -1,20 +1,19 @@
-<div class="card bg-dark text-white m-3" [style.background-image]="'url(' + backgroundImage + ')'">
-  <div class="card-content">
-    <h2 class="title">{{title}}</h2>
-    <p class="description mb-3">{{gender}}</p>
-    <div class="info-container">
-      <div class="info-item">
-        <i class="bi bi-controller"></i>
-        <span>{{platform}}</span>
-      </div>
-      <div class="info-item">
-        <i class="bi bi-person"></i>
-        <span>{{ageClassification}}</span>
-      </div>
-      <div class="info-item">
-        <i class="bi bi-tag"></i>
-        <span>{{realeseDate}}</span>
-      </div>
+<div class="game-card">
+    <div class="game-image">
+        <img [src]="imgUrl" [alt]="name">
+        <div class="game-rating">
+            <span class="rating-badge">{{ indicativeRating }}</span>
+        </div>
+        <button class="delete-button" (click)="deletarJogo()">
+            <i class="fas fa-trash"></i>
+        </button>
+        <div class="game-info">
+            <h3 class="game-title">{{ name }}</h3>
+            <div class="game-details">
+                <span class="gender">{{ gender }}</span>
+                <span class="platform">{{ platform }}</span>
+                <span class="release-date">{{ releaseDate | date:'dd/MM/yyyy' }}</span>
+            </div>
+        </div>
     </div>
-  </div>
 </div>

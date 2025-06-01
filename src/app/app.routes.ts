@@ -14,7 +14,7 @@ export const routes: Routes = [
     component: SignUpComponent
   },
   {
-    path: 'criar-game',
+    path: 'criar-jogo',
     component: CreateGameComponent
   },
   {

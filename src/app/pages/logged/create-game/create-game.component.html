@@ -2,28 +2,27 @@
   <div class="game-create-card">
     <img src="/images/logopp.png" alt="Logo" class="game-logo">
     <h2>Criar Jogo</h2>
-    <form id="game-create-form">
+    <form (ngSubmit)="criarJogo()" #gameForm="ngForm" id="game-create-form">
       <div class="mb-3">
-        <input type="text" class="form-control" placeholder="Nome do jogo">
+        <input type="text" class="form-control" placeholder="Nome do jogo" [(ngModel)]="novoJogo.name" name="name" required>
       </div>
       <div class="mb-3">
-        <input type="text" class="form-control" placeholder="Plataforma disponível">
+        <input type="text" class="form-control" placeholder="Plataforma disponível" [(ngModel)]="novoJogo.platform" name="platform" required>
       </div>
       <div class="mb-3">
-        <input type="text" class="form-control" placeholder="Gênero do jogo">
+        <input type="text" class="form-control" placeholder="Gênero do jogo" [(ngModel)]="novoJogo.gender" name="gender" required>
       </div>
       <div class="mb-3">
-        <input type="text" class="form-control" placeholder="Classificação etária">
+        <input type="text" class="form-control" placeholder="Classificação indicativa" [(ngModel)]="novoJogo.indicativeRating" name="indicativeRating" required>
       </div>
       <div class="mb-3">
-        <input type="date" class="form-control" placeholder="Data de lançamento">
+        <input type="date" class="form-control" placeholder="Data de lançamento" [(ngModel)]="novoJogo.releaseDate" name="releaseDate" required>
       </div>
       <div class="mb-3">
-        <input type="image" class="form-control" placeholder="Imagem do jogo">
+        <input type="text" class="form-control" placeholder="URL da imagem" [(ngModel)]="novoJogo.imgUrl" name="imgUrl" required>
       </div>
-      <a [routerLink]="['']">
-        <button type="submit" class="btn btn-custom-green w-100 mb-3">Criar</button>
-      </a>
+      
+      <button type="submit" class="btn btn-custom-green w-100 mb-3">Criar</button>
     </form>
   </div>
   <a [routerLink]="'/'">

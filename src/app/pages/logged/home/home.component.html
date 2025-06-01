@@ -6,18 +6,19 @@
         <div class="col-12 col-md-6 col-lg-3" *ngFor="let game of games">
             <app-card
                 [id]="game.id"
-                [title]="game.title"
+                [name]="game.name"
                 [platform]="game.platform"
-                [realeseDate]="game.realeseDate"
-                [ageClassification]="game.ageClassification"
+                [releaseDate]="game.releaseDate"
+                [indicativeRating]="game.indicativeRating"
                 [gender]="game.gender"
-                [backgroundImage]="game.backgroundImage">
+                [imgUrl]="game.imgUrl"
+                (deleted)="carregarJogos()">
             </app-card>
         </div>
     </div>
 </div>
 
-<a [routerLink]="['/criar-game']">
+<a [routerLink]="['/criar-jogo']">
     <button class="floating-button">
         <i class="fas fa-plus"></i>
     </button>
