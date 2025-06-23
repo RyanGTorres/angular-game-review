@@ -1,17 +1,18 @@
-# GameReview
+# Save Point
 
 Este projeto foi gerado com o **Angular CLI** versão **19.2.13**.
 
 ## Sobre o Projeto
 
-Neste projeto, iremos montar o layout para a aplicação **GameReview**.  
+Neste projeto, iremos montar o layout para a aplicação **Save Point**.  
 Inicialmente, utilizaremos **dados mockados (mocks)** para o desenvolvimento do frontend.  
 Posteriormente, o frontend será integrado com o backend desenvolvido em Java, disponível em:  
-➡️ [Repositório Backend - GameReview](https://github.com/RyanGTorres/GameReview)
+➡️ [Repositório Backend - Save Point](https://github.com/RyanGTorres/angular-savepoint)
 
 ---
 
 ## Servidor de Desenvolvimento
+
 
 Para iniciar um servidor de desenvolvimento local, execute:
 
